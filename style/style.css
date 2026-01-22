@@ -1,0 +1,370 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+body{
+    font-family: "Mulish", sans-serif;
+  font-optical-sizing: auto;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.hamburger{
+    display: none;
+}
+.active a{
+    color: #FF5400;
+}
+/* shared style */
+ .container{
+     max-width: 1350px;
+    margin: 0 auto;
+ }
+
+ .section-heading {
+    margin-bottom: 40px;
+    text-align: center;
+    max-width: 645px;
+    margin: auto;
+    margin-top: 50px;
+    
+
+}
+.section-heading h2{
+    font-size: 40px;
+    margin-bottom: 10px;
+    font-weight: 700;
+
+}
+.section-heading p{
+    font-size: 16px;
+    color: rgba(42, 40, 40, 0.808);
+}
+
+ .btn{
+    color: #ffffff;
+    font-size: 18px;
+    padding: 20px 28px;
+    background-color: #FF5400;
+    border: none;
+    border-radius: 10px;
+    font-weight: 700;
+    margin-top: 20px;
+    display: block;
+ }
+
+ .primary-btn{
+    color: #ffffff;
+    font-size: 18px;
+    padding: 10px 15px;
+    background-color: #FF5400;
+    border: none;
+    border-radius: 10px;
+    font-weight: 700;
+ }
+nav{
+    padding-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav > ul{
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+}
+nav > ul >li{
+    list-style: none;
+}
+nav > ul > li> a{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+    color: rgba(103, 96, 96, 0.852);
+}
+nav > div {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+nav > div > img{
+    width: 50px;
+    height: 50px;
+}
+nav > div >h1{
+    font-size: 36px;
+    font-weight: 800;
+}
+ div >h1> span{
+    color: #FF5400;
+}
+
+/* banner section  */
+ .banner-section{
+    margin-top: 20px;
+    background-image: linear-gradient(rgba(0, 0, 6, 0.347) , rgba(84, 82, 82, 0.352)),
+      url(../images/Group\ 13\ \(1\)\ \(1\).png);
+    background-repeat: no-repeat;
+    min-height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-size: cover;
+    border-radius: 20px;
+ }
+
+ 
+  .banner-section > div > h2{
+    color: aliceblue;
+    font-size: 50px;
+    font-weight: 800;
+  }
+
+   .banner-section > div > p{
+    color: aliceblue;
+    font-size: 18px;
+    font-weight: 400;
+ }
+ /* ata use kore easy babhe  content er maje gap dewa jai */
+ .banner-section > div{
+    /* background-color: brown; */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+ }
+ .banner-section > div > form{
+    background-color:rgba(255, 255, 255, 0.233) ;
+    padding: 25px;
+    border-radius: 15px;
+    display: flex;
+    gap: 20px;
+    
+    
+ }
+ .banner-section > div > form select,
+ .banner-section > div > form input[type="text"]{
+    padding: 15px 15px;
+    border-radius: 10px;
+    display: block;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    color: rgba(129, 129, 124, 0.491);
+ } 
+
+
+ 
+.tour-container{
+    margin-top: 80px;
+    display: flex;
+    gap: 20px;
+}
+.content-left ul li,p{
+    font-size: 18px;
+    margin-bottom: 18px;
+    color: rgba(42, 40, 40, 0.808);
+}
+
+.content-left h2{
+    font-size: 60px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+/* destination section  */
+
+.destination{
+    margin-top: 50px;
+}
+
+
+.img-container{
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    gap: 20px;
+   
+}
+.img-container div {
+    position: relative;
+}
+.img-container strong{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 30px;
+    color: #ffffff;
+}
+.img-container div:nth-child(1),
+.img-container div:nth-child(2){
+    grid-column: span 6;
+}
+.img-container div:nth-child(3){
+    grid-column: span 4;
+}
+.img-container div:nth-child(4){
+    grid-column: span 5;
+}
+.img-container div:nth-child(5){
+    grid-column: span 3;
+}
+.img-container div:nth-child(6){
+    grid-column: span 5;
+} 
+.img-container div:nth-child(7){
+    grid-column: span 7;
+}
+
+.img-container img{
+    width: 100%;
+    height: 100%;
+}
+
+
+.card-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+}
+.card{
+    padding: 20px;
+    border-radius: 15px;
+
+}
+.card img{
+    width: 60px;
+    margin-bottom: 10px;
+}
+.card h3{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+.card p{
+   font-size: 17px;
+    
+}
+
+
+.cream{
+    border:1px solid #ffd6bd ;
+    background-color: #fff7f1;
+    
+}
+.blue{
+    background-color: #f2fbff;
+    border: 1px solid #ccefff;
+   
+}
+.pink{
+    background: #fff3f3;
+    border: 1px solid #ffcfcf;
+    grid-column: span 2;
+    max-width: 550px;
+    margin: auto;
+}
+
+
+/* Deal Section Style  */
+.deal-section .deal{
+    background-image: linear-gradient(#dedada40,#938f8f7e) ,url(../images/deal-1.png);
+    padding: 65px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 20px;
+    display: flex;
+    border-radius: 20px;
+    /* justify-content: end; */
+}
+
+.deal-section .deal:nth-child(even){
+    justify-content: end;
+}
+
+.deal .deal-card{
+    background-color: #dee3e5bd;
+    padding: 30px;
+    border-radius: 20px;
+    max-width: 550px;
+}
+
+.deal-card .price{
+    color: #FF5400;
+    font-size: 20px;
+    font-weight: 700;
+}
+.deal-card h3{
+  font-size: 25px;
+  margin-bottom: 12px;
+  margin-top: 10px;
+  font-weight: 800;
+}
+
+@media screen and  (max-width:576px) {
+     nav ul{
+        display: none;
+     }
+     .hamburger{
+        display: block;
+     }
+     .tour-container{
+        flex-direction: column;
+     }
+     main .banner-section{
+        margin-left: 40px;
+        margin-top: 20px;
+     }
+     
+     .banner-section > div > form{
+        flex-direction: column;
+     }
+     .img-container div{
+        grid-column: span 12 !important;
+     }
+     .card-container{
+        grid-template-columns: repeat(1,1fr);
+     }
+     .pink{
+        grid-column: span 1 !important;
+     }
+
+     .content-left h2{
+        margin-left: 30px;
+     }
+
+     .btn{
+       margin-left: 30px;
+     }
+
+     .content-left ul li,p{
+        margin-left: 30px;
+        align-items: center;
+        
+     }
+     .tour-container{
+        align-items: center;
+        justify-content: center;
+     }
+
+     .img-container div img{
+        margin-left: 30px;
+        align-items: center;
+     }
+     .card-container .card{
+        margin-left: 30px;
+     }
+
+     .deal {
+        margin-left: 30px;
+     }
+     
+}
+@media screen  and (max-width: 1250px){
+   .container {
+    max-width: 95%;
+    margin: 0 auto;
+   }
+}
