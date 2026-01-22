@@ -123,6 +123,26 @@ nav > div >h1{
     font-size: 50px;
     font-weight: 800;
   }
+  .title {
+  font-size: 48px;
+  font-weight: 700;
+  animation: slideFade 3s ease-in-out infinite;
+}
+
+@keyframes slideFade {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+}
 
    .banner-section > div > p{
     color: aliceblue;
@@ -228,11 +248,27 @@ nav > div >h1{
     display: grid;
     grid-template-columns: repeat(2,1fr);
     gap: 20px;
+    
 }
 .card{
     padding: 20px;
     border-radius: 15px;
+    
+}
+.card {
+  animation: pulse 2.5s infinite;
+}
 
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.02);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 .card img{
     width: 60px;
@@ -288,7 +324,7 @@ nav > div >h1{
     background-color: #dee3e5bd;
     padding: 30px;
     border-radius: 20px;
-    max-width: 550px;
+    max-width: 550px;  
 }
 
 .deal-card .price{
@@ -360,11 +396,15 @@ nav > div >h1{
      .deal {
         margin-left: 30px;
      }
+     .tour-container img{
+        width: 100%;
+        margin: 0 auto;
+     }
      
 }
 @media screen  and (max-width: 1250px){
    .container {
-    max-width: 95%;
+    max-width: 100%;
     margin: 0 auto;
    }
 }
